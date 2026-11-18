@@ -1,0 +1,286 @@
+{
+  "lab_1_1": {
+    "printed_accuracy_pct": 95.3,
+    "handwritten_accuracy_pct": 80.7,
+    "overall_accuracy_pct": 91,
+    "classification_accuracy_pct": 97.5,
+    "fields_printed": 360,
+    "fields_handwritten": 150,
+    "expected_at_2025_mix_pct": 90.2,
+    "handwritten_needed_for_98_if_printed_100_pct": 94.3
+  },
+  "lab_1_2": {
+    "plan_weeks": 14,
+    "ai_ratio_p20": 1.42,
+    "ai_ratio_p50": 1.69,
+    "ai_ratio_p80": 1.83,
+    "all_ratio_p50": 1.27,
+    "all_ratio_p80": 1.68,
+    "range_weeks_low": 19.8,
+    "range_weeks_mid": 23.6,
+    "range_weeks_high": 25.7,
+    "range_weeks_high_all_projects": 23.5,
+    "backlog_counts": {
+      "build": 10,
+      "evaluation": 3,
+      "data": 2,
+      "adoption": 3
+    },
+    "backlog_evaluation_by_increment": {
+      "I1": 2,
+      "I2": 1,
+      "I3": 0,
+      "I4": 0
+    },
+    "raci": {
+      "D01": {
+        "PO": "A",
+        "EV": "R",
+        "DL": "C",
+        "ML": "C",
+        "SP": "I"
+      },
+      "D02": {
+        "EV": "A",
+        "DE": "R",
+        "ML": "C",
+        "DL": "I",
+        "PO": "I"
+      },
+      "D03": {
+        "SP": "A",
+        "DL": "R",
+        "PO": "C",
+        "EV": "C",
+        "DG": "C",
+        "ML": "I",
+        "OP": "I"
+      },
+      "D04": {
+        "PO": "A",
+        "EV": "R",
+        "ML": "C",
+        "DL": "C",
+        "OP": "C"
+      },
+      "D05": {
+        "DG": "A",
+        "DE": "R",
+        "DL": "C",
+        "PO": "C"
+      },
+      "D06": {
+        "DG": "A",
+        "DE": "R",
+        "PO": "C",
+        "DL": "I"
+      },
+      "D07": {
+        "SP": "A",
+        "PO": "R",
+        "DL": "C",
+        "EV": "C"
+      },
+      "D08": {
+        "SP": "A",
+        "DL": "R",
+        "DG": "C",
+        "PO": "C"
+      },
+      "D09": {
+        "OP": "A",
+        "DL": "R",
+        "PO": "C",
+        "EV": "C",
+        "DG": "C",
+        "ML": "C"
+      },
+      "D10": {
+        "OP": "A",
+        "DL": "C",
+        "PO": "I",
+        "SP": "I"
+      }
+    },
+    "segregation": [
+      [
+        "D03",
+        "EV"
+      ],
+      [
+        "D03",
+        "ML"
+      ],
+      [
+        "D04",
+        "ML"
+      ],
+      [
+        "D06",
+        "DE"
+      ],
+      [
+        "D09",
+        "DL"
+      ]
+    ],
+    "risks": [
+      {
+        "id": "R01",
+        "signal": "S01",
+        "category": "model",
+        "likelihood": 4,
+        "impact": 3,
+        "score": 12,
+        "level": "مرتفع",
+        "owner": "PO",
+        "treatment": "التخفيف"
+      },
+      {
+        "id": "R02",
+        "signal": "S02",
+        "category": "data",
+        "likelihood": 3,
+        "impact": 3,
+        "score": 9,
+        "level": "مرتفع",
+        "owner": "DG",
+        "treatment": "التخفيف"
+      },
+      {
+        "id": "R03",
+        "signal": "S03",
+        "category": "vendor model change",
+        "likelihood": 3,
+        "impact": 3,
+        "score": 9,
+        "level": "مرتفع",
+        "owner": "PO",
+        "treatment": "النقل والتخفيف"
+      },
+      {
+        "id": "R04",
+        "signal": "S04",
+        "category": "people served",
+        "likelihood": 2,
+        "impact": 3,
+        "score": 6,
+        "level": "متوسط",
+        "owner": "PO",
+        "treatment": "التخفيف"
+      },
+      {
+        "id": "R05",
+        "signal": "S05",
+        "category": "personal and classified data",
+        "likelihood": 2,
+        "impact": 4,
+        "score": 8,
+        "level": "مرتفع",
+        "owner": "DG",
+        "treatment": "التخفيف"
+      },
+      {
+        "id": "R06",
+        "signal": "S06",
+        "category": "adoption",
+        "likelihood": 3,
+        "impact": 2,
+        "score": 6,
+        "level": "متوسط",
+        "owner": "PO",
+        "treatment": "التخفيف"
+      },
+      {
+        "id": "R07",
+        "signal": "S07",
+        "category": "vendor",
+        "likelihood": 2,
+        "impact": 2,
+        "score": 4,
+        "level": "متوسط",
+        "owner": "DL",
+        "treatment": "القبول"
+      },
+      {
+        "id": "R08",
+        "signal": "S08",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 2,
+        "score": 6,
+        "level": "متوسط",
+        "owner": "DL",
+        "treatment": "التخفيف"
+      },
+      {
+        "id": "R09",
+        "signal": "S09",
+        "category": "people served",
+        "likelihood": 3,
+        "impact": 3,
+        "score": 9,
+        "level": "مرتفع",
+        "owner": "PO",
+        "treatment": "التخفيف"
+      },
+      {
+        "id": "R10",
+        "signal": "S10",
+        "category": "cost",
+        "likelihood": 2,
+        "impact": 2,
+        "score": 4,
+        "level": "متوسط",
+        "owner": "DL",
+        "treatment": "القبول"
+      }
+    ]
+  },
+  "lab_2_1": {
+    "r1": {
+      "printed_accuracy_pct": 95.7,
+      "classification_accuracy_pct": 98.5,
+      "spend_pct": 23.6,
+      "planned_spend_pct": 21.4,
+      "decision": "go"
+    },
+    "r2": {
+      "handwritten_accuracy_pct": 84.5,
+      "printed_accuracy_pct": 95.5,
+      "spend_pct": 58,
+      "planned_spend_pct": 50,
+      "decision": "pivot"
+    },
+    "r3": {
+      "printed_accuracy_pct": 97.2,
+      "handwritten_accuracy_pct": 85.5,
+      "overall_accuracy_pct": 92.5,
+      "auto_accept_share_pct": 64,
+      "auto_accept_precision_pct": 99.1,
+      "auto_accept_precision_handwritten_pct": 97.5,
+      "shadow_mean_minutes": 13.6,
+      "shadow_reduction_pct": 38.2,
+      "shadow_error_pct": 1.7,
+      "spend_pct": 83,
+      "planned_spend_pct": 78.6,
+      "decision": "go-limited"
+    }
+  },
+  "lab_2_2": {
+    "checklist_items": 14,
+    "vendor_draft_gaps": [
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "C11",
+      "C14"
+    ]
+  }
+}
