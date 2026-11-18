@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 2.1 · تنفيذ ثلاث جولات محاكاة مع قرار بوابة في كل منها · إدارة مشروعات الذكاء الاصطناعي وفرق التسليم</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D2_1_simulation.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day2.html#lab-2-1">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 2.1</span>
+<h1>تنفيذ ثلاث جولات محاكاة مع قرار بوابة في كل منها</h1>
+<p>ثلاث جولات تسليم لغِربال، حزمة لكل جولة يوزعها المدرّب: نتائج تحسبها، وتكلفة، وحدث مُدخل. تحدّث السجل وتسجل قرار البوابة في كل جولة. دون ذكاء اصطناعي.</p>
+<div class="meta"><span>120 دقيقة</span><span>اليوم 2</span><span>الجلسة 1: ثلاث جولات تسليم</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="2.1">
+  <div class="box goal">
+    <h3>ستخرج من هذا المختبر بـ</h3>
+    <ul>
+      <li>ثلاثة سجلات بوابة، واحد لكل جولة: المقيس مقابل معيار الخروج، والتكلفة، والمخاطر، والقرار وشروطه، ومن أوصى ومن قرر ومن أنتج الدليل. هذه أدلة ناتج التعلم الثالث، وتدافع عنها في المناقشة.</li>
+      <li>سجل مخاطر محدَّث في كل جولة، دليل ناتج التعلم الثاني.</li>
+    </ul>
+  </div>
+
+  <h2>قواعد المحاكاة</h2>
+  <ul>
+    <li><b>دون ذكاء اصطناعي</b> في المختبر كله: تحديث السجل وقرار البوابة يُكتبان معًا في وقت الجولة.</li>
+    <li>يوزع المدرّب حزمة كل جولة عند بدئها. لا تفتح حزمة جولة قبل أن تُوزَّع: الملفات في المستودع، وقراءتها مسبقًا تفسد تمرينك وحدك.</li>
+    <li>القرار يُكتب تعليقًا على بطاقة الجولة في اللوحة (أو صفًّا في جدول مشترك) قبل أن تُوزَّع الجولة التالية. الأداة تسجل وقت الكتابة، ولا يُعدَّل القرار بعدها.</li>
+    <li>تبدأ الجولة الأولى من سجل اللجنة الرسمي وخطتها المعتمدة، لا من ملفاتك في اليوم الأول. يوزعهما المدرّب عند بدء المختبر.</li>
+  </ul>
+
+  <h2>قواعد البوابة (من وضع المقرر)</h2>
+  <table>
+    <tr><th>القرار</th><th>الشرط</th></tr>
+    <tr><td>المضي</td><td>تحققت معايير الخروج كلها على المجموعة المثبتة، ولا خطر مرتفع أو كارثي بلا مالك ومعالجة. ويجوز المضي بشروط، لكل شرط مالك وموعد.</td></tr>
+    <tr><td>تغيير الاتجاه</td><td>لم يتحقق معيار، والدليل يدل على طريق أضيق أو مختلف ضمن الميزانية، بهدف جديد تعتمده الراعية.</td></tr>
+    <tr><td>التوقف</td><td>لم يتحقق، ولا طريق يحمله دليل؛ أو التكلفة تتجاوز الميزانية المعتمدة؛ أو خطر كارثي لا يُعالج.</td></tr>
+  </table>
+  <p class="small">قائد التسليم (أنت) يوصي، والراعية رغد الجهيم تقرر، وقائدة التقييم جود العجلان تنتج الدليل. المورِّد يُستشار ولا يقرر. مستوى الخطر = الاحتمالية × الأثر، بفئات الإطار الوطني لإدارة مخاطر الذكاء الاصطناعي.</p>
+
+  <h2>ما تحتاجه</h2>
+  <div class="files">
+    <a href="files/approved_plan.csv" download><b>approved_plan.csv</b><span>الخطة المعتمدة ومعايير خروج مراحلها.</span></a>
+    <a href="files/sim/start_risk_log.csv" download><b>start_risk_log.csv</b><span>سجل اللجنة عند بدء المحاكاة.</span></a>
+    <a href="files/sim/gate_record_template.csv" download><b>gate_record_template.csv</b><span>أعمدة سجل البوابة.</span></a>
+    <a href="files/sim/round1_status.md" download><b>round1_status.md</b><span>الجولة 1: تقرير الحالة والحدث.</span></a>
+    <a href="files/sim/round1_eval_fields.csv" download><b>round1_eval_fields.csv</b><span>الجولة 1: نتائج الحقول.</span></a>
+    <a href="files/sim/round1_eval_docs.csv" download><b>round1_eval_docs.csv</b><span>الجولة 1: نتائج التصنيف.</span></a>
+    <a href="files/sim/round2_status.md" download><b>round2_status.md</b><span>الجولة 2: تقرير الحالة والحدثان.</span></a>
+    <a href="files/sim/round2_eval_fields.csv" download><b>round2_eval_fields.csv</b><span>الجولة 2: نتائج الحقول.</span></a>
+    <a href="files/sim/round3_status.md" download><b>round3_status.md</b><span>الجولة 3: تقرير الحالة والحدث.</span></a>
+    <a href="files/sim/round3_eval_fields.csv" download><b>round3_eval_fields.csv</b><span>الجولة 3: نتائج الحقول والقبول الآلي.</span></a>
+    <a href="files/sim/round3_shadow.csv" download><b>round3_shadow.csv</b><span>الجولة 3: التشغيل الظلّي.</span></a>
+  </div>
+  <p class="small">جدول بيانات، ولوحة لتتبع العمل فيها عمود للجولات وبطاقة لكل بوابة. الملفات اصطناعية ومصنفة «عام».</p>
+
+  <h2>الخطوات</h2>
+
+  <div class="step">
+    <h3>1 · اقرأ قواعد البوابة والسجل الابتدائي <span class="min">10 د</span></h3>
+    <p>اقرأ معايير الخروج في الخطة المعتمدة، ثم سجل اللجنة. أنشئ في اللوحة ثلاث بطاقات: البوابة 1 و2 و3.</p>
+  </div>
+
+  <div class="step">
+    <h3>2 · الجولة 1: احسب الأدلة وحدّث السجل <span class="min">15 د</span></h3>
+    <p>احسب دقة الحقول المطبوعة ودقة التصنيف من ملفي الجولة، والإنفاق نسبةً من الميزانية مقابل المخطط. ثم اقرأ الحدث، وحدّث السجل: ما الذي وقع؟ وما الذي تغيّرت احتماليته؟</p>
+    <div class="prompt" data-tool="جدول بيانات">=AVERAGE(<span class="ph">عمود correct</span>)</div>
+  </div>
+
+  <div class="step">
+    <h3>3 · الجولة 1: سجّل قرار البوابة <span class="min">15 د</span></h3>
+    <p>املأ سطرًا في سجل البوابة، واكتب القرار وشروطه تعليقًا على بطاقة البوابة 1. ماذا يعني الحدث لموعد المرحلة الثانية؟ اكتب ما تغيّر في النطاق.</p>
+  </div>
+
+  <div class="step">
+    <h3>4 · الجولة 2: احسب الأدلة وحدّث السجل <span class="min">15 د</span></h3>
+    <p>احسب دقة المكتوب بخط اليد والمطبوع كلًّا وحده، والإنفاق. اقرأ الحدثين، وحدّث السجل. ما الخطر الذي وقع؟ وما الخطر الجديد؟</p>
+  </div>
+
+  <div class="step">
+    <h3>5 · الجولة 2: سجّل قرار البوابة <span class="min">20 د</span></h3>
+    <p>اقرأ طلب الراعية ووعد المورِّد على قواعد البوابة: هل يحمله دليل؟ سجّل القرار، وإن غيّرت الاتجاه فاكتب الهدف الجديد الذي تعتمده الراعية، وما يحدث لإصدار النموذج قبل سحبه.</p>
+  </div>
+
+  <div class="step">
+    <h3>6 · الجولة 3: احسب الأدلة وحدّث السجل <span class="min">20 د</span></h3>
+    <p>احسب دقة الحقول المقبولة آليًّا، ونسبتها، ودقة المقبول آليًّا في كل نوع كتابة وحده. ومن التشغيل الظلّي: متوسط دقائق المراجع ونسبة الحزم التي فيها خطأ بعد المراجعة. ثم حدّث السجل.</p>
+    <div class="prompt" data-tool="جدول بيانات">=AVERAGEIFS(<span class="ph">عمود correct</span>; <span class="ph">عمود auto_accepted</span>; "yes"; <span class="ph">عمود script</span>; "handwritten")</div>
+  </div>
+
+  <div class="step">
+    <h3>7 · الجولة 3: سجّل قرار البوابة وسطر تقرير الحالة <span class="min">25 د</span></h3>
+    <p>سجّل القرار على طلب الراعية الإطلاق في كل المناطق: ما الذي يحمله الدليل، وبأي شروط، ومن يملك كل شرط؟ ثم اكتب جملتين لتقرير الحالة فيهما نطاق الإطلاق وما لا نعرفه بعد.</p>
+  </div>
+
+  <div class="step stretch">
+    <h3>✱ مهمة إضافية</h3>
+    <p>ماذا كنت ستقرر في الجولة 2 لو أظهرت تجربة على 100 حقل دقة 92% مع الأرشيف؟ اكتب القرار وما يمنعك من الثقة الكاملة بالتجربة.</p>
+  </div>
+
+  <h2>أسئلة تحقق</h2>
+  <ol class="checks">
+    <li>هل كتبت في كل سجل من أوصى ومن قرر ومن أنتج الدليل، ولم يكن واحد منهم المورِّد؟</li>
+    <li>في أي جولة تغيّر معيار الخروج؟ ومن اعتمد التغيير، ومتى كُتب؟</li>
+    <li>أي شريحة في الجولة الثالثة تمنع قبولًا آليًّا كاملًا؟</li>
+  </ol>
+
+  <details class="instructor">
+    <summary>للمدرّب</summary>
+    <ul>
+      <li>المرجع: <code>labs/solutions/D2_1_simulation.md</code>، والأرقام في <code>key.json</code> (القسم <code>lab_2_1</code>).</li>
+      <li>وزّع الحزم واحدة واحدة: الجولة 1 بعد الخطوة 1، والجولة 2 حين تُكتب قرارات البوابة 1، والجولة 3 حين تُكتب قرارات البوابة 2. اطبعها أو ضعها في مجلد يُفتح في وقته.</li>
+      <li>القرارات المرجعية: المضي (الجولة 1)، وتغيير الاتجاه (الجولة 2)، وإطلاق محدود بشروط (الجولة 3). يُقبل غيرها إن حمله الدليل وقواعد البوابة.</li>
+      <li>الفخاخ: قبول وعد المورِّد بثلاثة أسابيع دون تجربة؛ وخفض معيار الخروج بعد النتيجة؛ ونسيان أن الأرقام مقيسة على v3 الذي سيُسحب؛ وقراءة دقة المقبول آليًّا كلها (99.1%) دون شريحة المكتوب بخط اليد (97.5%)؛ والإطلاق في كل المناطق ومالك الحوادث لم يُسمَّ.</li>
+    </ul>
+  </details>
+</article>
+<nav class="pager"><a href="D1_2_team_estimates_risks.html" rel="prev">→ المختبر السابق</a><a href="D2_2_handover.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · إدارة مشروعات الذكاء الاصطناعي وفرق التسليم<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-18⁩ · الإيداع 292230e</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-18T07:02:49Z","version":"2027.1.0","commit":"292230e"},"course":{"id":"lds-prd-204","code":"LDS-PRD-204","title":"إدارة مشروعات الذكاء الاصطناعي وفرق التسليم","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-prd-204/","repo":"SDAIAAcademy/lds-prd-204","home":"../index.html"},"lab":{"id":"2.1","title":"تنفيذ ثلاث جولات محاكاة مع قرار بوابة في كل منها","summary":"ثلاث جولات تسليم لغِربال، حزمة لكل جولة يوزعها المدرّب: نتائج تحسبها، وتكلفة، وحدث مُدخل. تحدّث السجل وتسجل قرار البوابة في كل جولة. دون ذكاء اصطناعي.","minutes":120,"day":2,"unit":"اليوم 2","session":1,"deck":"../slides/day2.html#lab-2-1","prev":"D1_2_team_estimates_risks.html","next":"D2_2_handover.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

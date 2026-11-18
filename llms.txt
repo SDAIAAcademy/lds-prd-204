@@ -1,0 +1,31 @@
+# إدارة مشروعات الذكاء الاصطناعي وفرق التسليم
+
+> تقود تسليم خدمة ذكاء اصطناعي قد لا يتحقق هدفها: مراحل لها معايير خروج، وتقديرات في نطاقات، وسجل مخاطر، وقرارات بوابات من الأدلة، وتسليم إلى العمليات فيه مالك بشري للحوادث. مقرر من أكاديمية سدايا، الرمز LDS-PRD-204، الإصدار 2027.1.0، بالعربية.
+
+كل شريحة عنوان مثل "#### [day1#slide-id] العنوان": استشهد بالشرائح بهذا المعرّف، وكل استشهاد رابط (slides/day1.html#slide-id). هذه الملفات هي ما يراه المشارك: لا ملاحظات المدرّب فيها ولا مفاتيح الإجابة.
+
+## المقرر
+
+- [صفحة المقرر](https://sdaiaacademy.github.io/lds-prd-204/index.md): نظرة عامة ونواتج التعلم والجدول والمختبرات؛ الصفحة نفسها https://sdaiaacademy.github.io/lds-prd-204/index.html
+- [المقرر كاملًا](https://sdaiaacademy.github.io/lds-prd-204/llms-full.txt): كل وحدة وجلسة وشريحة في ملف واحد، نحو 12,272 من الوحدات النصية
+- [أسئلة التدريب](https://sdaiaacademy.github.io/lds-prd-204/practice.html): أسئلة تختبر بها نفسك، مع تعليل بعد كل إجابة
+
+## الشرائح
+
+- [اليوم 1: التخطيط تحت عدم اليقين](https://sdaiaacademy.github.io/lds-prd-204/slides/day1.md): ثلاث جلسات: مراحل لها فرضيات ومعايير خروج، ثم الفريق والتقديرات وسجل المخاطر، ثم البوابات وتقارير الحالة الصادقة؛ الجلسات: التسليم في ظروف عدم اليقين، الفرق والتقديرات وسجل المخاطر، البوابات على الأدلة وتقارير الحالة؛ الصفحة: https://sdaiaacademy.github.io/lds-prd-204/slides/day1.html؛ نحو 6,555 من الوحدات النصية
+- [اليوم 2: القرار والتسليم](https://sdaiaacademy.github.io/lds-prd-204/slides/day2.md): ثلاث جولات محاكاة بقرار عند كل بوابة، ثم وثيقة التسليم إلى العمليات؛ وبعدهما الاختبار القصير المراقب والمشروع الختامي؛ الجلسات: ثلاث جولات تسليم، التسليم إلى فريق العمليات؛ الصفحة: https://sdaiaacademy.github.io/lds-prd-204/slides/day2.html؛ نحو 3,689 من الوحدات النصية
+- [المشروع الختامي: حزمة التسليم والدفاع عن البوابة](https://sdaiaacademy.github.io/lds-prd-204/slides/capstone.md): تحضير 40 دقيقة، ثم مراجعة من عشر دقائق لكل مشارك: خمس للعرض وخمس للأسئلة، يضيف فيها المقيِّم حدثًا ويقرر المشارك مباشرة؛ الصفحة: https://sdaiaacademy.github.io/lds-prd-204/slides/capstone.html؛ نحو 1,429 من الوحدات النصية
+
+## المختبرات
+
+- [المختبر 1.1: تحويل موجز إلى مراحل تزايدية لها معايير خروج](https://sdaiaacademy.github.io/lds-prd-204/labs/D1_1_increments.md): اليوم 1، الجلسة 1، 90 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-prd-204/labs/D1_1_increments.html
+- [المختبر 1.2: بناء المصفوفة والتقديرات وسجل المخاطر](https://sdaiaacademy.github.io/lds-prd-204/labs/D1_2_team_estimates_risks.md): اليوم 1، الجلسة 2، 105 دقائق؛ الصفحة: https://sdaiaacademy.github.io/lds-prd-204/labs/D1_2_team_estimates_risks.html
+- [المختبر 2.1: تنفيذ ثلاث جولات محاكاة مع قرار بوابة في كل منها](https://sdaiaacademy.github.io/lds-prd-204/labs/D2_1_simulation.md): اليوم 2، الجلسة 1، 120 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-prd-204/labs/D2_1_simulation.html
+- [المختبر 2.2: كتابة وثيقة التسليم إلى فريق العمليات والتحقق منها](https://sdaiaacademy.github.io/lds-prd-204/labs/D2_2_handover.md): اليوم 2، الجلسة 2، 45 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-prd-204/labs/D2_2_handover.html
+
+## ملفات السياق
+
+- [context/course.md](https://sdaiaacademy.github.io/lds-prd-204/context/course.md): المقرر كاملًا، لمساعد يقبل ملفًا مرفقًا، نحو 12,272 من الوحدات النصية
+- [context/day1.md](https://sdaiaacademy.github.io/lds-prd-204/context/day1.md): اليوم 1، نحو 6,555 من الوحدات النصية
+- [context/day2.md](https://sdaiaacademy.github.io/lds-prd-204/context/day2.md): اليوم 2، نحو 3,689 من الوحدات النصية
+- [context/capstone.md](https://sdaiaacademy.github.io/lds-prd-204/context/capstone.md): المشروع الختامي، نحو 1,429 من الوحدات النصية
