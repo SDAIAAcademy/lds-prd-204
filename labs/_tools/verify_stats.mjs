@@ -41,8 +41,7 @@ out.monitoring = { weeks: [[196, 200], [194, 200], [189, 200]].map(([c, n]) => p
 // Bank: a reference class of four projects and an 8-week plan
 const bankRatios = [1.2, 1.4, 1.5, 2.1];
 out.bank_reference = { p50: r2(percentileInc(bankRatios, 0.5)), p80: r2(percentileInc(bankRatios, 0.8)), weeks_mid: r1(8 * percentileInc(bankRatios, 0.5)), weeks_high: r1(8 * percentileInc(bankRatios, 0.8)) };
-// Bank: a gate (exit 92% on 250 fields) and a mixed set
+// Bank: a gate (exit 92% on 250 fields)
 out.bank_gate = { pct: pct(226, 250) };
-out.bank_mix = { expected_pct: r1(0.8 * 96 + 0.2 * 70) };
 
 console.log(JSON.stringify(out, null, 2));
