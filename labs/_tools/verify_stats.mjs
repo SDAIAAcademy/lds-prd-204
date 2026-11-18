@@ -36,7 +36,7 @@ out.risks = [[3, 4], [2, 2], [4, 3], [1, 2]].map(([l, i]) => ({ likelihood: l, i
 out.gate = { correct: 350, n: 400, pct: pct(350, 400), exit: 90 };
 
 // Day 2, session 2: monitoring of the routing service after launch (weekly audit sample of 200)
-out.monitoring = { weeks: [[196, 200], [195, 200], [189, 200]].map(([c, n]) => pct(c, n)), threshold: 96 };
+out.monitoring = { weeks: [[196, 200], [194, 200], [189, 200]].map(([c, n]) => pct(c, n)), threshold: 96 };
 
 // Bank: a reference class of four projects and an 8-week plan
 const bankRatios = [1.2, 1.4, 1.5, 2.1];
